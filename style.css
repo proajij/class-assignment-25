@@ -176,12 +176,15 @@ padding-top: 10px;
 /* banner-section */
 .banner-section{
     background-image:  url(./img/free-bg.jpg);
-    padding-bottom: 700px;
+    padding: 200px 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .banner-section::after{
@@ -199,10 +202,8 @@ padding-top: 10px;
 .banner-heading {
     color: #fff; 
     z-index: 111;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-  
+    position: relative;
+
     
   }
   .banner-heading h5 {
@@ -217,11 +218,11 @@ padding-top: 10px;
 	content: "";
 	background-color: #fff;
 	position: absolute;
-	width: 13%;
-	height: 2px;
-	left: 220px;
-	top: 96px;
+	width: 4%;
+	height: 1px;
+	top: 100px;
 	display: inline-block;
+	right: 622px;
 }
   .banner-heading p{
     font-size: 18px;
