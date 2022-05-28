@@ -1,0 +1,330 @@
+/* Defult Css */
+body{
+    background-color: #f6f9fc;
+}
+/* Card Section Start */
+.card-header-text{
+    text-align: center;
+}
+.card-header-text h6{
+    
+    color: #5c78ed;
+    font-weight: 500;
+}
+.card-header-text h2{
+    
+    font-weight: 700; 
+    position: relative;
+}
+.card-header-text h2::after {
+	content: "";
+	background-color: #0d6efd;
+	position: absolute;
+	width: 4%;
+	height: 2px;
+	left: 623px;
+	top: 56px;
+	display: inline-block;
+	/* text-align: center; */
+}
+.card-header-text p{
+    
+    color: #a09ea3;
+    font-weight: 600; 
+}
+/* Pricing Card Section */
+.all-card-section{
+
+}
+.pricing-card-section {
+	background-color: #fff;
+	color: #000;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 45px;
+	text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+.pricing-card-section h1 {
+	color: #212529;
+	font-size: 46px;
+	font-weight: 600;
+   
+}
+.pricing-card-section:hover h1{
+    animation: pricingvalue 1s  forwards;
+    transition: .4s;
+}
+.pricing-card-section:hover h5{
+    animation: pricingvalue 1s  forwards;
+    transition: .4s;
+}
+.pricing-card-section h5 {
+	color: #212529;
+	font-weight: 600;
+}
+.pricing-card-section ul {
+	list-style: none;
+	padding-left: 0;
+	color: #949492;
+	font-weight: 500;
+	font-size: 17px;
+    transition: .4s;
+}
+.hr-card {
+	margin-left: 83px;
+	margin-top: 60px;
+    font-weight: 300;
+    color: #949492;
+}
+
+.pricing-card-section ul li{
+padding-top: 10px;
+}
+.pricing-card-section:hover{
+    background-color: #3165ea;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pricing-card-section:hover ul{
+    color: #fff;
+    
+
+}
+.pricing-card-section .pricing-button{
+    transition: .4s;
+    padding: 8px 24px;
+    border-radius: 30px;
+    position: relative;
+    border: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.pricing-card-section:hover .pricing-button{
+     background-color: #fff;
+     color: #3165ea;
+     font-weight: 600;
+     border: none;
+   
+     
+    
+}
+.pricing-card-section a{
+    font-weight: 500;
+}
+.pricing-card-section a:hover {
+    color: #fff !important;
+    z-index: 1;
+}
+
+.pricing-button::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    border-radius: 30px;
+    left: 0; 
+    background-color: #3165ea;
+    transition: .6s;
+    z-index: -1;
+    
+    
+    
+}
+.pricing-button:hover::after{
+    width: 100%;
+    
+}
+.all-card-section {
+	height: 600px;
+}
+
+@keyframes pricingvalue{
+
+    0%{
+        
+        color: rgb(14, 0, 0);
+        transition: 1s;
+        opacity: 0;
+    }
+    30%{
+        
+        color: rgb(17, 4, 4);
+        opacity:0.5 ;
+        transition: 3s;
+      
+    }
+    50%{
+        
+        color: rgba(22, 2, 2, 0.5);
+        opacity:.8 ;
+        transition: 5s;
+      
+    }
+    100%{
+       
+        color: #fff;
+        opacity: 1;
+        transition: .5s;
+        
+    }
+}
+
+/* banner-section */
+.banner-section{
+    background-image:  url(./img/free-bg.jpg);
+    padding-bottom: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0d6efd;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    
+   
+}
+.banner-heading {
+    color: #fff; 
+    z-index: 111;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  
+    
+  }
+  .banner-heading h5 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.banner-heading h2 {
+	font-weight: 700;
+    position: relative;
+}
+.banner-heading h2::after {
+	content: "";
+	background-color: #fff;
+	position: absolute;
+	width: 13%;
+	height: 2px;
+	left: 220px;
+	top: 96px;
+	display: inline-block;
+}
+  .banner-heading p{
+    font-size: 18px;
+	font-weight: 600;
+  }
+  .banner-btn {
+	color: #4069e1;
+	font-weight: 600;
+	padding: 11px 32px;
+	border-radius: 32px;
+	text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.banner-btn:hover {
+    color: #fff;
+    
+}
+.banner-btn::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    border-radius: 30px;
+    left: 0; 
+    background-color: #4069e1;
+    transition: .6s;
+    cursor: pointer;
+    z-index: -1;
+
+  
+    
+    
+}
+.banner-btn:hover::after{
+    width: 100%;
+}
+.banner-btn a{
+    z-index: 1;
+}
+
+
+
+.subcribe-section {
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.sign-up-section{
+    background-color: #3763eb;
+    padding: 40px;
+    color: #fff;
+    border-radius: 5px ;
+}
+.sign-up-section h3 {
+	font-weight: 600;
+}
+.sign-up-section p {
+	font-size: 17px;
+	font-weight: 500;
+}
+.sign-up-section input {
+	border-radius: 30px;
+	border: none;
+	padding: 5px 15px;
+	font-size: 16px;
+}
+.input-btn {
+	padding: 6px 24px;
+	background-color: #3763eb;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 30px;
+	border: 1px solid #fff;
+}
+
+.input-btn:hover{
+    border: 1px solid #fff;
+}
+.card-text {
+	background-color: #fff;
+	/* padding: 68px; */
+	height: 224px;
+	padding: 30px 93px;
+	width: 464px;
+}
+.card-text h4 {
+	font-weight: 600;
+}
+.card-text a {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #0d6efd;
+	color: #fff;
+	padding: 5px 22px;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 17px;
+}
